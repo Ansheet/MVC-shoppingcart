@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OnlineshoppingDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblCart">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Name="CartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="CartStatusID" Type="int" />
+    <Property Name="MemberID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCartStatus">
+    <Key>
+      <PropertyRef Name="CartStatusID" />
+    </Key>
+    <Property Name="CartStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CartStatus" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tblCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="200" />
+    <Property Name="CategoryIsActive" Type="bit" />
+    <Property Name="CategoryIsDelete" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblProduct">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductDescription" Type="nvarchar(max)" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="ProductIsActive" Type="bit" />
+    <Property Name="ProductIsDelete" Type="bit" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ProductImage" Type="nvarchar(max)" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblRole">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblSlideImage">
+    <Key>
+      <PropertyRef Name="SlideID" />
+    </Key>
+    <Property Name="SlideID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SlideImage" Type="nvarchar(max)" />
+    <Property Name="SlideTitle" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_TblCart_tblCartStatus">
+    <End Role="tblCartStatus" Type="Self.tblCartStatus" Multiplicity="0..1" />
+    <End Role="TblCart" Type="Self.TblCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCartStatus">
+        <PropertyRef Name="CartStatusID" />
+      </Principal>
+      <Dependent Role="TblCart">
+        <PropertyRef Name="CartStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblCart_tblProduct">
+    <End Role="tblProduct" Type="Self.tblProduct" Multiplicity="0..1" />
+    <End Role="TblCart" Type="Self.TblCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProduct">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="TblCart">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProduct_tblProduct">
+    <End Role="tblCategory" Type="Self.tblCategory" Multiplicity="0..1" />
+    <End Role="tblProduct" Type="Self.tblProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCategory">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="tblProduct">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetSearch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="searchText" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <EntityContainer Name="OnlineshoppingDBModelStoreContainer">
+    <EntitySet Name="TblCart" EntityType="Self.TblCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCartStatus" EntityType="Self.tblCartStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCategory" EntityType="Self.tblCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblProduct" EntityType="Self.tblProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRole" EntityType="Self.tblRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSlideImage" EntityType="Self.tblSlideImage" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TblCart_tblCartStatus" Association="Self.FK_TblCart_tblCartStatus">
+      <End Role="tblCartStatus" EntitySet="tblCartStatus" />
+      <End Role="TblCart" EntitySet="TblCart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblCart_tblProduct" Association="Self.FK_TblCart_tblProduct">
+      <End Role="tblProduct" EntitySet="tblProduct" />
+      <End Role="TblCart" EntitySet="TblCart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProduct_tblProduct" Association="Self.FK_tblProduct_tblProduct">
+      <End Role="tblCategory" EntitySet="tblCategory" />
+      <End Role="tblProduct" EntitySet="tblProduct" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,54 @@
+﻿@model OnlineShoppingCart.Models.CategoryVM
+@{
+    ViewBag.Title = "CategoryEdit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Category Edit</h2>
+
+<div class="container-fluid">
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="../Admin/DashBoard">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item ">Categories</li>
+        <li class="breadcrumb-item active">Add New Category</li>
+    </ol>
+    <!-- Icon Cards-->
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Add New Category
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("CategoryEdit", "Admin", FormMethod.Post))
+            {
+                @Html.HiddenFor(v => v.CategoryID)
+                <div class="form-group">
+                    @Html.LabelFor(v => v.CategoryName)
+                    @Html.TextBoxFor(v => v.CategoryName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(v => v.CategoryName, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(v => v.CategoryIsActive, new { @class = "form-label" })<br />
+
+                    @Html.CheckBox("CategoryIsActive")
+                    @Html.ValidationMessageFor(v => v.CategoryIsActive, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(v => v.CategoryIsDelete, new { @class = "form-label" })<br />
+
+                    @Html.CheckBox("CategoryIsDelete")
+                    @Html.ValidationMessageFor(v => v.CategoryIsDelete, "", new { @class = "text-danger" })
+
+
+                </div>
+                <a onclick="window.history.back()" class="btn btn-danger">Cancel</a>
+                <input type="submit" value="Save" class="btn btn-primary" />
+            }
+        </div>
+    </div>
+</div>

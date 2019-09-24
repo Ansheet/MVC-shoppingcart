@@ -1,0 +1,12 @@
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\bin\Debug\OnlineShoppingCart.DAL.dll.config
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\bin\Debug\OnlineShoppingCart.DAL.dll
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\bin\Debug\OnlineShoppingCart.DAL.pdb
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\bin\Debug\EntityFramework.dll
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\bin\Debug\EntityFramework.xml
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.csproj.CoreCompileInputs.cache
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.csproj.CopyComplete
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.dll
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.pdb
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.csprojAssemblyReference.cache
