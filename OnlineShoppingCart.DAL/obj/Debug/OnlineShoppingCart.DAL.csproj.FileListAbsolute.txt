@@ -9,4 +9,3 @@ C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\On
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.csproj.CopyComplete
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.pdb
-C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart.DAL\obj\Debug\OnlineShoppingCart.DAL.csprojAssemblyReference.cache

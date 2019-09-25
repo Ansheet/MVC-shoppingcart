@@ -75,6 +75,7 @@ C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.Ow
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Newtonsoft.Json.dll
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\OnlineShoppingCart.DAL.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Owin.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\System.Web.Helpers.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\System.Web.Mvc.dll
@@ -84,6 +85,8 @@ C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\System.Web.W
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\System.Web.WebPages.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\System.Web.WebPages.Razor.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\WebGrease.dll
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\OnlineShoppingCart.DAL.pdb
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\OnlineShoppingCart.DAL.dll.config
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\System.Web.Helpers.xml
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\System.Web.Mvc.xml
@@ -113,11 +116,8 @@ C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.AI
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\Microsoft.AI.Web.xml
+C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\OnlineShoppingCart.csprojAssemblyReference.cache
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\OnlineShoppingCart.csproj.CoreCompileInputs.cache
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\OnlineShoppingCart.csproj.CopyComplete
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\OnlineShoppingCart.dll
 C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\OnlineShoppingCart.pdb
-C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\OnlineShoppingCart.DAL.dll
-C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\OnlineShoppingCart.DAL.pdb
-C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\bin\OnlineShoppingCart.DAL.dll.config
-C:\Users\aps\source\repos\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\OnlineShoppingCart.csprojAssemblyReference.cache
